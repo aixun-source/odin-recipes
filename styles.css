@@ -1,0 +1,14 @@
+/* h1 as a selector */
+h1 {
+    color:brown;
+    background-color:antiquewhite;
+    font-family:"Times New Roman", 'Times New Roman', Times, serif
+}
+/* h2 as a selector */
+h2{
+    background-color:aqua;
+}
+/* ul for ingredients and ol for steps*/
+ul, ol{
+    font-family:'Courier New', Courier, monospace;
+}
