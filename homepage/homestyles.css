@@ -13,7 +13,7 @@ html{
 }
 
 .header div{
-    border: 1px brown; /* change this here! */
+    border: 5px brown; /* change this here! */
     height: 20px;
     flex: 1 1 0%;
 }
@@ -28,7 +28,7 @@ html{
 }
 
 .herocontent, .heroimage{
-    border: 1px brown;
+    border: 5px brown;
     height: 500px;
     flex: 1 1 0%
 } 
@@ -39,7 +39,7 @@ html{
 }
 
 .herocontent div{
-    border: 1px brown;
+    border: 5px brown;
     width: 200px;
     flex: 1 1 auto;
 }
@@ -51,11 +51,11 @@ html{
 /* box css */
 .boxlist{
     display: flex;
-    border: 1px brown;
+    border: 5px brown;
 }
 
 .boxlistbox{
-    border: 1px brown;
+    border: 5px brown;
     height: 300px;
     flex: 1 1 0%;
     display: flex;
@@ -63,7 +63,7 @@ html{
 }
 
 .boxlistbox div{
-    border: 1px brown;
+    border: 5px brown;
     width: 200px;
     flex: 1 1 auto;
 }
