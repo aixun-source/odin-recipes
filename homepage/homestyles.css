@@ -94,8 +94,14 @@ html{
 
 .cta div{
     height: 200px;
+    border: 1px brown;
 }
 
 .ctawords{
     width: 700px;
+}
+
+/* footer */
+.footer{
+    border: 1px brown;
 }
