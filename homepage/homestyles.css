@@ -75,12 +75,27 @@ html{
 /* quote */
 .quote{
     display: flex;
+    flex-direction: column;
 }
 
 .quote div{
     border: 1px brown;
+    width: 700px;
 }
 
 .quoteauthor{
-    flex: 3 1 0%;
+    flex: 3 1 auto;
+}
+
+/* cta */
+.cta{
+    display: flex;
+}
+
+.cta div{
+    height: 200px;
+}
+
+.ctawords{
+    width: 700px;
 }
