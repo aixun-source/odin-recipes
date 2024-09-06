@@ -7,6 +7,7 @@ html{
 	box-sizing: inherit;
 }
 
+/* header css */
 .header{
     display: flex;
 }
@@ -19,4 +20,30 @@ html{
 
 .header .headerlogo{
     flex: 2 1 0%;
+}
+
+/* hero css */
+.hero {
+    display: flex;
+}
+
+.herocontent, .heroimage{
+    border: 1px brown;
+    height: 500px;
+    flex: 1 1 0%
+} 
+
+.herocontent{
+    display: flex;
+    flex-direction: column;
+}
+
+.herocontent div{
+    border: 1px brown;
+    width: 200px;
+    flex: 1 1 auto;
+}
+
+.heroheader{
+    flex: 2 1 auto;
 }
