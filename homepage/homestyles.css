@@ -1,0 +1,22 @@
+/* alterate css box styling */
+html{
+	box-sizing: border-box;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+.header{
+    display: flex;
+}
+
+.header div{
+    border: 1px brown; /* change this here! */
+    height: 20px;
+    flex: 1 1 0%;
+}
+
+.header .headerlogo{
+    flex: 2 1 0%;
+}
