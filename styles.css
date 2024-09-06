@@ -18,3 +18,8 @@ ul, ol{
     border-style: solid;
     border-color: red;
 }
+/* img for receipe htmls */
+img {
+    height: auto;
+    width: 300px;
+}
