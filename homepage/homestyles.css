@@ -71,3 +71,16 @@ html{
 .boximage{
     flex: 2 1 auto;
 }
+
+/* quote */
+.quote{
+    display: flex;
+}
+
+.quote div{
+    border: 1px brown;
+}
+
+.quoteauthor{
+    flex: 3 1 0%;
+}
