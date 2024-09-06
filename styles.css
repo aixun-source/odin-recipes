@@ -2,7 +2,10 @@
 h1 {
     color:brown;
     background-color:antiquewhite;
-    font-family:"Times New Roman", 'Times New Roman', Times, serif
+    font-family:"Times New Roman", 'Times New Roman', Times, serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
 /* h2 as a selector */
 h2{
@@ -11,4 +14,7 @@ h2{
 /* ul for ingredients and ol for steps*/
 ul, ol{
     font-family:'Courier New', Courier, monospace;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
 }
