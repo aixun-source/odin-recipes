@@ -13,7 +13,7 @@ html{
 }
 
 .header div{
-    border: 5px brown; /* change this here! */
+    border: 5px solid brown; /* change this here! */
     height: 20px;
     flex: 1 1 0%;
 }
@@ -28,7 +28,7 @@ html{
 }
 
 .herocontent, .heroimage{
-    border: 5px brown;
+    border: 5px solid brown;
     height: 500px;
     flex: 1 1 0%
 } 
@@ -39,7 +39,7 @@ html{
 }
 
 .herocontent div{
-    border: 5px brown;
+    border: 5px solid brown;
     width: 200px;
     flex: 1 1 auto;
 }
@@ -51,11 +51,11 @@ html{
 /* box css */
 .boxlist{
     display: flex;
-    border: 5px brown;
+    border: 5px solid brown;
 }
 
 .boxlistbox{
-    border: 5px brown;
+    border: 5px solid brown;
     height: 300px;
     flex: 1 1 0%;
     display: flex;
@@ -63,7 +63,7 @@ html{
 }
 
 .boxlistbox div{
-    border: 5px brown;
+    border: 5px solid brown;
     width: 200px;
     flex: 1 1 auto;
 }
@@ -79,7 +79,7 @@ html{
 }
 
 .quote div{
-    border: 1px brown;
+    border: 5px solid brown;
     width: 700px;
 }
 
@@ -94,7 +94,7 @@ html{
 
 .cta div{
     height: 200px;
-    border: 1px brown;
+    border: 5px solid brown;
 }
 
 .ctawords{
@@ -103,5 +103,5 @@ html{
 
 /* footer */
 .footer{
-    border: 1px brown;
+    border: 5px solid brown;
 }
