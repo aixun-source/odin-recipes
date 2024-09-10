@@ -10,6 +10,8 @@ html{
 /* header css */
 .header{
     display: flex;
+    margin-left: 40px; 
+    margin-right: 40px;
 }
 
 .header div{
@@ -25,6 +27,8 @@ html{
 /* hero css */
 .hero {
     display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .herocontent, .heroimage{
@@ -49,6 +53,11 @@ html{
 }
 
 /* box css */
+.box{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .boxlist{
     display: flex;
     border: 5px solid brown;
@@ -76,6 +85,8 @@ html{
 .quote{
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .quote div{
@@ -90,6 +101,8 @@ html{
 /* cta */
 .cta{
     display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .cta div{
@@ -104,4 +117,6 @@ html{
 /* footer */
 .footer{
     border: 5px solid brown;
+    margin-left: 40px;
+    margin-right: 40px;
 }
