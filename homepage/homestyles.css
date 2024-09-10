@@ -1,39 +1,64 @@
 /* alterate css box styling */
 html{
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *::before, *::after{
-	box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
 }
 
 /* header css */
 .header{
     display: flex;
-    margin-left: 40px; 
-    margin-right: 40px;
+    background: lightblue;
 }
 
-.header div{
+.subheader{
+    display: flex;
+    margin: 10px 40px;
+    background: honeydew;
+}
+
+.subheader div{
     border: 5px solid brown; /* change this here! */
     height: max-content;
     flex: 1 1 0%;
+    margin-top: auto;
 }
 
-.header .headerlogo{
+.subheader .headerlogo{
     flex: 2 1 0%;
 }
 
-/* hero css */
-.hero {
-    display: flex;
+.subheader .headerlinkone{
     margin-left: 40px;
-    margin-right: 40px;
+}
+
+/* hero css */
+.hero{
+    display: flex;
+    background: lightblue;
+}
+
+.subhero {
+    display: flex;
+    margin: 10px 40px;
+    background: grey;
+    border: 5px solid brown;
+    width: 100%;
+}
+
+.subhero div{
+    height: max-content;
 }
 
 .herocontent, .heroimage{
     border: 5px solid brown;
-    height: 500px;
+    height: 0px;
     flex: 1 1 0%
 } 
 
@@ -44,18 +69,31 @@ html{
 
 .herocontent div{
     border: 5px solid brown;
-    width: 200px;
-    flex: 1 1 auto;
+    flex: 1 1 auto; /*makes it all flex equally in col axis*/
 }
 
 .heroheader{
-    flex: 2 1 auto;
+    flex: 2 1 auto; /*makes it twice the size of body and button*/
+}
+
+.heroimage{
+    margin: auto; /*centers heroimage*/
 }
 
 /* box css */
 .box{
-    margin-left: 40px;
-    margin-right: 40px;
+    display: flex;
+    background: lightblue;
+}
+
+.subbox{
+    margin: 10px 40px;
+    width: 100%;
+    background: yellow;
+}
+
+.boxheader{
+    border: 5px solid brown;
 }
 
 .boxlist{
@@ -65,7 +103,7 @@ html{
 
 .boxlistbox{
     border: 5px solid brown;
-    height: 300px;
+    height: max-content;
     flex: 1 1 0%;
     display: flex;
     flex-direction: column;
@@ -73,7 +111,6 @@ html{
 
 .boxlistbox div{
     border: 5px solid brown;
-    width: 200px;
     flex: 1 1 auto;
 }
 
@@ -84,39 +121,53 @@ html{
 /* quote */
 .quote{
     display: flex;
+    background: lightblue;
+}
+.subquote{
+    display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 10px 40px;
+    width: 100%;
+    background: lightgreen;
 }
 
-.quote div{
+.subquote div{
     border: 5px solid brown;
-    width: 700px;
 }
 
 .quoteauthor{
     flex: 3 1 auto;
+    text-align: right;
 }
 
 /* cta */
 .cta{
     display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
+    background: lightblue;
 }
 
-.cta div{
-    height: 200px;
+.subcta{
+    display: flex;
+    margin: 10px 40px;
+    width: 100%;
+    background: bisque;
+}
+
+.subcta div{
+    height: max-content;
     border: 5px solid brown;
-}
-
-.ctawords{
-    width: 700px;
+    width: 100%;
 }
 
 /* footer */
 .footer{
+    display: flex;
+    background: lightblue;
+}
+
+.subfooter{
     border: 5px solid brown;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 10px 40px;
+    width: 100%;
+    background: gainsboro;
 }
