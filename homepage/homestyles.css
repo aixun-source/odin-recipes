@@ -14,17 +14,16 @@ body{
 /* header css */
 .header{
     display: flex;
-    background: lightblue;
+    background: #1F2937;
 }
 
 .subheader{
     display: flex;
     margin: 10px 40px;
-    background: honeydew;
+    background: #1F2937;
 }
 
 .subheader div{
-    border: 5px solid brown; /* change this here! */
     height: max-content;
     flex: 1 1 0%;
     margin-top: auto;
@@ -32,23 +31,28 @@ body{
 
 .subheader .headerlogo{
     flex: 2 1 0%;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .subheader .headerlinkone{
     margin-left: 40px;
 }
 
+.headerlinkone, .headerlinktwo, .headerlinkthree{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 /* hero css */
 .hero{
     display: flex;
-    background: lightblue;
+    background: #1F2937;
 }
 
 .subhero {
     display: flex;
     margin: 10px 40px;
-    background: grey;
-    border: 5px solid brown;
     width: 100%;
 }
 
@@ -57,7 +61,6 @@ body{
 }
 
 .herocontent, .heroimage{
-    border: 5px solid brown;
     height: 0px;
     flex: 1 1 0%
 } 
@@ -68,41 +71,62 @@ body{
 }
 
 .herocontent div{
-    border: 5px solid brown;
     flex: 1 1 auto; /*makes it all flex equally in col axis*/
 }
 
 .heroheader{
     flex: 2 1 auto; /*makes it twice the size of body and button*/
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
 }
 
 .heroimage{
     margin: auto; /*centers heroimage*/
+    background: grey;
+    aspect-ratio: 16/9;
+}
+
+.herobody{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border-color: white;
 }
 
 /* box css */
 .box{
     display: flex;
-    background: lightblue;
 }
 
 .subbox{
     margin: 10px 40px;
     width: 100%;
-    background: yellow;
 }
 
 .boxheader{
-    border: 5px solid brown;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
 }
 
 .boxlist{
     display: flex;
-    border: 5px solid brown;
+    column-gap: 10px;
 }
 
 .boxlistbox{
-    border: 5px solid brown;
     height: max-content;
     flex: 1 1 0%;
     display: flex;
@@ -110,64 +134,82 @@ body{
 }
 
 .boxlistbox div{
-    border: 5px solid brown;
     flex: 1 1 auto;
 }
 
 .boximage{
     flex: 2 1 auto;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 12px;
+    aspect-ratio: 1/1;
+}
+
+.boxcontent{
+    text-align: center;
 }
 
 /* quote */
 .quote{
     display: flex;
-    background: lightblue;
+    background: #E5E7EB;
 }
 .subquote{
     display: flex;
     flex-direction: column;
     margin: 10px 40px;
     width: 100%;
-    background: lightgreen;
 }
 
-.subquote div{
-    border: 5px solid brown;
-}
 
 .quoteauthor{
     flex: 3 1 auto;
     text-align: right;
 }
 
+.quotewords{
+    font-size: 36px;
+    color: #1F2937;
+}
+
 /* cta */
 .cta{
     display: flex;
-    background: lightblue;
 }
 
 .subcta{
     display: flex;
     margin: 10px 40px;
     width: 100%;
-    background: bisque;
+    background: #3882F6;
 }
 
 .subcta div{
     height: max-content;
-    border: 5px solid brown;
     width: 100%;
+}
+
+.ctawords{
+    font-size: 20px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.ctabutton{
+    margin: auto;
 }
 
 /* footer */
 .footer{
     display: flex;
-    background: lightblue;
+    background: #1F2937;
 }
 
 .subfooter{
-    border: 5px solid brown;
     margin: 10px 40px;
     width: 100%;
-    background: gainsboro;
+    background: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
 }
