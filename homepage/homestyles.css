@@ -16,7 +16,7 @@ html{
 
 .header div{
     border: 5px solid brown; /* change this here! */
-    height: 20px;
+    height: max-content;
     flex: 1 1 0%;
 }
 
