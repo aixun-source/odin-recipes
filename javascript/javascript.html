@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="javastyles.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="box"> <!-- this only works because there is no scrolling-->
@@ -18,7 +18,7 @@
         <div class="name">
             <h2>Hello World!</h2>
             <div class="center">
-                <button onclick="askNameFunction()">What's your name?</button>
+                <button id="name">What's your name?</button>
             </div>
             <p id = "answer"></p>
         </div>
@@ -26,8 +26,11 @@
         <!-- sps -->
         <div class="sps">
             <h2>Want to play SPS?</h2>
-            <div class="center">
-                <button onclick="playGame()">Play SPS!</button>
+            <div id="rps-center" class="center">
+                <!-- <button onclick="playGame()">Play SPS!</button> -->
+                 <button id="rock">Rock</button>
+                 <button id="paper">Paper</button>
+                 <button id="scissors">Scissors</button>
             </div>
             <p id = "result"></p>
         </div>
