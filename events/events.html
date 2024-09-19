@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="eventstyle" href="eventstyle.css">
+    <script src="events.js" defer></script>
+</head>
+<body>
+    <h1>TITLE</h1>
+    <div id="container"></div>
+
+    <!-- events testing -->
+    <button onclick="alert('Hello World')">Click Me</button> 
+    <!-- the alert above provides an on screen prompt that cannot be shown in preview. -->
+    
+    <button id="btn">Click Me Too!</button>
+    <!-- issue is that DOM only can have 1 onclick property -->
+
+    <button id="btn2">Click Me Three!</button>
+    <!-- maintain separation of concerns and also allow for multiple event listeners -->
+
+    <!-- MDN Active Learning Practice -->
+     <h1>My Shopping List</h1>
+
+     <p>Add items here: </p><input id="item" type="text"><button id="add">Add item</button>
+     <ul id="list"></ul>
+
+    <!-- Custom Element -->
+    <div class="note">Custom Event!</div>
+</body>
+</html>
