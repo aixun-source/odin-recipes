@@ -3,6 +3,7 @@ body,html {
     padding: 0;
     display: flex;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -12,40 +13,81 @@ body,html {
     flex-direction: column;
     height: 100vh;
     width: 100vh;
-    border: 1px solid blue;
+    background: lightblue;
 }
 
-/* display */
 .display{
-    font-size: 40px; /*larger*/
-    text-align: left;
-    flex: 2 1 auto;
-    background: grey;
-}
-
-/* operators */
-.operator{
-    display: flex;
+    flex: 1 1 auto;
     background: lightgrey;
-    flex: 1 1 auto;
-    gap: 20px;
-}
-
-.operator div{
-    aspect-ratio: 1/1;
-    border: 1px solid red;
-}
-
-/* numberEqual */
-.numberEqual{
     display: flex;
-    flex: 3 1 auto;
-    background: greenyellow;
+    align-items: center;
+    justify-content: right;
 }
 
-.number {
+.display > span{
+    padding: 20px;
+    font-size: 40px;
 }
 
-#equal{
+.operator{
     flex: 1 1 auto;
+    background: lightgreen;
+    gap: 20px;
+    display: flex;
+}
+
+.op{
+    flex: 1 1 auto;
+    background: lightblue;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numberEqualClear{
+    flex: 3 1 auto;
+    background: lightsalmon;
+    display: flex;
+}
+
+.numberGrid{
+    flex: 3 1 0;
+    background: orange;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 5px 5px;
+}
+
+.num{
+    background: rgb(228, 187, 112);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equalClear{
+    flex: 1 1 0;
+    background: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 5px;
+}
+
+.equalClear div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear{
+    flex: 1 1 auto;
+    background: yellow;
+    margin: 5px
+}
+.equal{
+    flex: 2 1 auto;
+    background: yellow;
+    margin: 5px
 }
