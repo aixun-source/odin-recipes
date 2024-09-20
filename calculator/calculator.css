@@ -1,0 +1,51 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+* {
+    box-sizing: border-box;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+    border: 1px solid blue;
+}
+
+/* display */
+.display{
+    font-size: 40px; /*larger*/
+    text-align: left;
+    flex: 2 1 auto;
+    background: grey;
+}
+
+/* operators */
+.operator{
+    display: flex;
+    background: lightgrey;
+    flex: 1 1 auto;
+    gap: 20px;
+}
+
+.operator div{
+    aspect-ratio: 1/1;
+    border: 1px solid red;
+}
+
+/* numberEqual */
+.numberEqual{
+    display: flex;
+    flex: 3 1 auto;
+    background: greenyellow;
+}
+
+.number {
+}
+
+#equal{
+    flex: 1 1 auto;
+}
