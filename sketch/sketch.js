@@ -1,6 +1,11 @@
 const initButton = document.querySelector('.but');
 const grid = document.querySelector('.grid'); //the original div
 
+//for colouring
+function touch(){
+    this.style.backgroundColor = "black"; 
+}
+
 function initGrid(){
     let input = prompt("How big? Between 2 to 10 only.");
     let divInGrid = document.createElement("div");
@@ -12,11 +17,12 @@ function initGrid(){
     for (let i = 0; i < input; i++){
         let divRow = document.createElement("div"); //the row div
         divRow.classList.add("row");
-        divRow.style.cssText = `display: flex; height: calc(100vh/${input}); width: 100vh; border: 1px solid blue`;
+        divRow.style.cssText = `display: flex; height: calc(100vh/${input}); width: 100vh`;
         for (let i = 0; i < input; i++) {
             let divBox = document.createElement("div"); //the box div
             divBox.classList.add("box");
-            divBox.style.cssText = `aspect-ratio: 1/1; width: calc(100vh/${input}); border: 1px solid red`; //for testing
+            divBox.style.cssText = `aspect-ratio: 1/1; width: calc(100vh/${input})`;
+            divBox.addEventListener('mouseenter', touch);
             divRow.appendChild(divBox);
         }
         divInGrid.appendChild(divRow);
