@@ -81,12 +81,12 @@ body,html {
     justify-content: center;
 }
 
-.clear{
+#clear{
     flex: 1 1 auto;
     background: yellow;
     margin: 5px
 }
-.equal{
+#equal{
     flex: 2 1 auto;
     background: yellow;
     margin: 5px
