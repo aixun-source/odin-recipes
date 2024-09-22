@@ -26,7 +26,8 @@ let secondNumber;
 let operator;
 
 //operator
-function operator(firstNumber, secondNumber, operator){
+// this is the function thats preventing the js from connecting
+function performOperation(firstNumber, secondNumber, operator){
 	switch(operator){
 		case "add":
 			return add(firstNumber, secondNumber);
@@ -40,38 +41,23 @@ function operator(firstNumber, secondNumber, operator){
 }
 
 let number = document.querySelector(".numberGrid");
-let one = document.querySelector("#one");
-one.addEventListener('click', alert("you clicked one!"));
-alert('help! is this connection working?');
+// let one = document.querySelector("#one");
+// one.addEventListener('click', alert("you clicked one!"));
 
 let display = document.querySelector("#display");
 //make the number buttons work
-number.addEventListener('click', (event) => {
-    let target = event.target;
-    switch(target.id){
-        case "one":
-			alert("you clicked one!");
+function numberClick(event) {
+	let target = event.target;
+
+	switch (target.id){
+		case "one":
+			alert("You clicked one!");
 			display.textContent = "1";
-            break;
-        case "two":
-			display.textContent = "2";
-            break;
-        case "three":
-			display.textContent = "3";
-            break;
-		case "three":
-            break;
-		case "four":
 			break;
-		case "five":
+		case "two":
+			alert("You clicked two!");
 			break;
-		case "six":
-			break;
-		case "seven":
-			break;
-		case "eight":
-			break;
-		case "nine":
-			break;
-    }
-});
+	}
+}
+
+number.addEventListener('click', numberClick);
