@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "calculator.css">
-    <script src = "calculator.js" defer></script>
+    <script src="calculator.js" defer></script>
 </head>
 <body>
-    <button>Hello!</button>
+    <div class="grid">
+        <div class="display"><span id="display"></span></div>
+        <div class="operator">
+            <div class="op" id="add"><strong>+</strong></div>
+            <div class="op" id="subtract"><strong>-</strong></div>
+            <div class="op" id="multiply"><strong>x</strong></div>
+            <div class="op" id="divide"><strong>/</strong></div>
+        </div>
+        <div class="numberEqualClear">
+            <div class="numberGrid">
+                <div class="num" id="seven"><span>7</span></div>
+                <div class="num" id="eight"><span>8</span></div>
+                <div class="num" id="nine"><span>9</span></div>
+                <div class="num" id="four"><span>4</span></div>
+                <div class="num" id="five"><span>5</span></div>
+                <div class="num" id="six"><span>6</span></div>
+                <div class="num" id="one"><span>1</span></div>
+                <div class="num" id="two"><span>2</span></div>
+                <div class="num" id="three"><span>3</span></div>
+            </div>
+            <div class="equalClear">
+                <div id="clear"><strong>AC</strong></div>
+                <div id="equal"><strong>=</strong></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
