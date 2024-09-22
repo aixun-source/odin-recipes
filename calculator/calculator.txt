@@ -1,0 +1,5 @@
+Just some suggestions to include into the calc which could be useful
+1. make the UI prettier
+2. add in decimals - and don't let the user add more than one decimal in firstNum and secondNum
+3. add a backspace button
+4. add keyboard support (not sure what that means?)
